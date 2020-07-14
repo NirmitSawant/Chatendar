@@ -1,6 +1,6 @@
 # Chatendar
 
-Speed Running Through Chat UI
+Speed Running Through Chat Screen UI
 
 ## Mangya Types 
 
