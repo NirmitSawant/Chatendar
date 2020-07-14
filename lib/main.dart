@@ -96,16 +96,14 @@ class _ChatendarScreenState extends State<ChatendarScreen>
       _isComposing = false;
     });
     ChatChitti message = ChatChitti(
-      //NEW
       text: text,
       animationController: AnimationController(
         duration: const Duration(milliseconds: 700),
         vsync: this,
-      ), //NEW
-    ); //NEW
+      ), 
+    ); 
     setState(() {
-      //NEW
-      _messages.insert(0, message); //NEW
+      _messages.insert(0, message); 
     });
     _focusNode.requestFocus();
     message.animationController.forward();
@@ -132,18 +130,16 @@ class _ChatendarScreenState extends State<ChatendarScreen>
               Divider(height: 1.0),
               Container(
                 decoration: BoxDecoration(color: Theme.of(context).cardColor),
-                child: _buildTextComposer(), //MODIFIED
+                child: _buildTextComposer(), 
               ),
             ],
           ),
-          decoration: Theme.of(context).platform == TargetPlatform.iOS // NEW
+          decoration: Theme.of(context).platform == TargetPlatform.iOS 
               ? BoxDecoration(
-                  // NEW
                   border: Border(
-                    // NEW
-                    top: BorderSide(color: Colors.grey[200]), // NEW
-                  ), // NEW
-                ) // NEW
+                    top: BorderSide(color: Colors.grey[200]), 
+                  ),
+                ) 
               : null),
     );
   }
